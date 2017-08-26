@@ -10,8 +10,8 @@ def run_win_cmd(cmd):
     for line in process.stdout:
         result.append(line)
     errcode = process.returncode
-    for line in result:
-        print repr(line)
+#    for line in result:
+#        print repr(line)
     if errcode is not None:
         raise Exception('cmd %s, failed, see above for details', cmd)
     
@@ -27,10 +27,16 @@ for process_name in process_list:
     for line in new_locations:
         locations.append(line)
 
-print type(locations)
+process_list.close()
 
+# open file to save path list to, creating file if non-existant
 path_list = open("pathList.txt", "w+")
+
+# converting to a set removes duplicates but does not preserve order
+locations = set(locations)
 
 for line in locations:
     if line.strip() and not "ExecutablePath" in line:
         path_list.write(line.strip() + "\n")
+        
+path_list.close()
