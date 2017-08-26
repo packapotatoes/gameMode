@@ -1,0 +1,2 @@
+Steam.exe
+Chrome.exe
