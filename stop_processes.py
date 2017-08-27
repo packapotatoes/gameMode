@@ -15,7 +15,7 @@ for process_name in process_list:
             paths.append(line)
          
     print "closing '" + process_name.strip() + "'"
-    run_win_cmd_no_result('taskkill /IM ' + process_name.strip() + '')
+    run_win_cmd_no_result('taskkill /t /f /IM ' + process_name.strip() + '')
 
 process_list.close()
 
