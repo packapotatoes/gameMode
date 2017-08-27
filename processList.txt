@@ -1,1 +1,3 @@
+chrome.exe
 Steam.exe
+SteamService.exe
