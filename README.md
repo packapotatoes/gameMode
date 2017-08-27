@@ -1,5 +1,7 @@
 # gameMode
 
+[![Join the chat at https://gitter.im/game-mode/Lobby](https://badges.gitter.im/game-mode/Lobby.svg)](https://gitter.im/game-mode/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 The intention of this project is to stop or start multiple processes with a single click. 
 
 When gaming, it is desireable to have as many computing resources available as possible;
