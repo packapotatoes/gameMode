@@ -1,0 +1,7 @@
+[chrome]
+executable = "chrome.exe"
+command = 'taskkill /IM chrome.exe'
+path = ''
+[steam]
+executable = "Steam.exe"
+path = ''

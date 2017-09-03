@@ -1,2 +1,6 @@
 chrome.exe
 Steam.exe
+Deluge.exe
+PulseSecureService.exe
+SteamService.exe
+Pulse.exe
